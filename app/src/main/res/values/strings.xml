@@ -1,1 +1,5 @@
-<resources><string name="app_name">小窓検索</string></resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">小窓検索</string>
+    <string name="menu_label">小窓検索</string>
+</resources>
