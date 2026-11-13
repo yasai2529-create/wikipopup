@@ -149,6 +149,17 @@ public class PopupActivity extends Activity {
         header.addView(title, new LinearLayout.LayoutParams(0,
                 LinearLayout.LayoutParams.WRAP_CONTENT, 1f));
 
+        // リロードボタン
+        TextView reloadBtn = new TextView(this);
+        reloadBtn.setText("⟳");
+        reloadBtn.setTextColor(textColor);
+        reloadBtn.setTextSize(18);
+        reloadBtn.setPadding(dp(10), dp(8), dp(6), dp(8));
+        reloadBtn.setOnClickListener(v -> {
+            if (webView != null) webView.reload();
+        });
+        header.addView(reloadBtn);
+
         // サイト切替ボタン
         TextView switchBtn = new TextView(this);
         switchBtn.setText("切替");
